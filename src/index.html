@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  
+<head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+  
+<body>
+    
+    <div id="page">
+      
+        <h1 id="title-1">Ceasar Cipher</h1><br>
+
+        <div id="main-form">
+        
+            <form id="form-encode">
+
+                <label id="label-cifrar">Insira o Texto para ser Cifrado!</label><br><br>
+                <textarea id="texto-cifrar" class="msg" cols="" rows="" style="resize: none;"></textarea><br><br><br>
+                <button id="botao-cifrar" class="button-button1" type="button" onclick="">CIFRAR</button><br>
+
+            </form>
+            
+            
+            <form id="form-factor"><br>
+
+                <label id="label-fator">Insira o Fator da Cifra!</label><br><br>
+                <input id="texto-fator" type= "text"/><br>
+
+            </form>
+            
+            <form id="form-decode">
+
+                <label id="label-decifrar">Insira o Texto para ser Decifrado!</label><br><br>
+                <textarea id="texto-decifrar" class="msg" cols="" rows="" style="resize: none;"></textarea><br><br><br>
+                <button id="botao-decifrar" class="button-button2" type="button" onclick="">DECIFRAR</button><br>
+
+            </form>    
+
+        </div>
+        
+        <br><br><br>
+
+        <div id="container-resultados"><br>
+
+            <form id="resultados">
+                
+                <label id="label-resultados">Resultado</label><br><br><br>
+                <textarea id="texto-criptografado" class="msg" cols="" rows="" style="resize:none"></textarea><br><br>
+
+            </form>
+        
+        </div>
+
+       
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    
+	<script src="cipher.js" type="module"></script>
+	
+</body>
+
 </html>
