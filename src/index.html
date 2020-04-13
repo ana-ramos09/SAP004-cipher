@@ -11,15 +11,15 @@
     
     <div id="page">
       
-        <h1 id="title-1">Ceasar Cipher</h1><br>
+        <h1 id="title-1">Cipher Word</h1><br>
 
         <div id="main-form">
         
             <form id="form-encode">
 
-                <label id="label-cifrar">Insira o Texto para ser Cifrado!</label><br><br>
+                <label id="label-cifrar">Insira o Texto para ser Cifrado!</label><br><br><br>
                 <textarea id="texto-cifrar" class="msg" cols="" rows="" style="resize: none;"></textarea><br><br><br>
-                <button id="botao-cifrar" class="button-button1" type="button" onclick="">CIFRAR</button><br>
+                <button id="botao-cifrar" class="button" type="button">Cifrar</button>
 
             </form>
             
@@ -27,15 +27,15 @@
             <form id="form-factor"><br>
 
                 <label id="label-fator">Insira o Fator da Cifra!</label><br><br>
-                <input id="texto-fator" type= "text"/><br>
+                <input id="texto-fator" type= "text"/>
 
             </form>
             
             <form id="form-decode">
 
-                <label id="label-decifrar">Insira o Texto para ser Decifrado!</label><br><br>
+                <label id="label-decifrar">Insira o Texto para ser Decifrado!</label><br><br><br>
                 <textarea id="texto-decifrar" class="msg" cols="" rows="" style="resize: none;"></textarea><br><br><br>
-                <button id="botao-decifrar" class="button-button2" type="button" onclick="">DECIFRAR</button><br>
+                <button id="botao-decifrar" class="button" type="button">Decifrar</button>
 
             </form>    
 
@@ -54,11 +54,101 @@
         
         </div>
 
-       
-    </div>
+        <br><br><br>
+
+        <div id="container-game">
+
+            <h3 id="titulo-container-game">Let's Play!</h3>
     
-	<script src="cipher.js" type="module"></script>
-	
+            <form id="jogo-palavra-1">
+                
+                <label id="jogo-palavra-1-label">1</label><br>
+                <input id="jogo-palavra-1-code"><br><br>
+                <input id="jogo-palavra-1-original">
+            
+            </form>
+
+            <form id="jogo-palavra-2">
+                
+                <label id="jogo-palavra-2-label">2</label><br>
+                <input id="jogo-palavra-2-code"><br><br>
+                <input id="jogo-palavra-2-original">
+            
+            </form>
+
+            <form id="jogo-palavra-3">
+                
+                <label id="jogo-palavra-3-label">3</label><br>
+                <input id="jogo-palavra-3-code"><br><br>
+                <input id="jogo-palavra-3-original">
+            
+            </form>
+
+            <form id="jogo-palavra-4">
+                
+                <label id="jogo-palavra-4-label">4</label><br>
+                <input id="jogo-palavra-4-code"><br><br>
+                <input id="jogo-palavra-4-original">
+            
+            </form>
+
+            <form id="jogo-palavra-5">
+                
+                <label id="jogo-palavra-5-label">5</label><br>
+                <input id="jogo-palavra-5-code"><br><br>
+                <input id="jogo-palavra-5-original"><br>
+            
+            </form>
+            
+            <br><br>
+
+            <form id="jogo-questoes">
+
+                <p id="titulo-questoes-jogo"></p>
+                
+                <div id = "form-instrucoes">
+                
+                    <label id="instrucao-texto-1"></label><br><br>
+                    <label id="instrucao-texto-2"></label><br><br>
+                    <label id="instrucao-texto-3"></label><br><br>
+                    <label id="instrucao-texto-4"></label><br><br>
+                
+                </div>
+                
+                <label id="jogo-questao-1"></label><br><br>
+                <label id="jogo-questao-2"></label><br><br>
+                <label id="jogo-questao-3"></label><br><br>
+                <label id="jogo-questao-4"></label><br><br>
+                <label id="jogo-questao-5"></label><br><br>
+
+            </form>
+
+        </div>    
+
+        <br><br><br>
+
+        <div id="container-select-game">
+
+            <form id="botoes-jogos">
+                
+                <label id="titulo-select-game">Instrução e Jogos</label><br><br><br>
+                
+                <button id="instrucao-botao" class = "button" type="button">Como Jogar</button><br><br><br>
+                <button id="jogo-1" class="button" type="button" >Jogo 1</button><br><br>
+                <button id="jogo-2" class="button" type="button" >Jogo 2</button><br><br><br>
+                
+                <label id="jogo-programdora-label">Só para Programadoras!</label><br><br>
+                <button id="jogo-3" class="button" type="button" >Jogo 3</button><br><br>
+
+            </form>
+
+        </div>
+    
+    </div>
+
+    <script type="module" src="./index.js"></script>
+ 
+
 </body>
 
 </html>

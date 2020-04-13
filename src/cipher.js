@@ -1,19 +1,19 @@
-const cipher = {
+export const cipher = {
   encode : function (factor, word) {
     
     
     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    let letter = "";			  //each letter to be iterated
+    let letter = "";			//each letter to be iterated
     let codedLetter = "";		//letter that will be returned as result of this function
     
-    let position = 0;			  //number variable representing the index of the found letter in string alphabet
+    let position = 0;			//number variable representing the index of the found letter in string alphabet
     let newPosition = 0;		//index of codedLetter
     
     let firstIndex = 0;			//Index of the first element of the group where the letter belongs
     let lastIndex = 0;			//Index of the last element of the group where the letter belongs
-    let total = 0;				  //total of items in the range
+    let total = 0;				//total of items in the range
     
-    let i;						      //number variable to iterate with each character from alphabet
+    let i;						//number variable to iterate with each character from alphabet
       let codedText = "";			
     
       //loop through each letter
@@ -81,17 +81,17 @@ const cipher = {
   decode : function (factor, word) {
 	
     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    let letter = "";			  //each letter to be iterated
+    let letter = "";			//each letter to be iterated
     let codedLetter = "";		//letter that will be returned as result of this function
     
-    let position = 0;			  //number variable representing the index of the found letter in string alphabet
+    let position = 0;			//number variable representing the index of the found letter in string alphabet
     let newPosition = 0;		//index of codedLetter
     
     let firstIndex = 0;			//Index of the first element of the group where the letter belongs
     let lastIndex = 0;			//Index of the last element of the group where the letter belongs
-    let total = 0;				  //total of items in the range
+    let total = 0;				//total of items in the range
     
-    let i;						      //number variable to iterate with each character from alphabet
+    let i;						//number variable to iterate with each character from alphabet
       let codedText = "";			
     
       //loop through each letter
@@ -158,5 +158,4 @@ const cipher = {
 };
 
 export default cipher;
-
 
